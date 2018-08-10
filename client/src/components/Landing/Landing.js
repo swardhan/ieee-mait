@@ -33,6 +33,15 @@ const Contact = () => {
 					<div className="byline">Let us Work Together</div>
 				</div>
 				<div className="contact-form">
+					<form>
+						<input type="text" placeholder="Name"/>
+						<input type="text" placeholder="Email Id"/>
+						<input type="text" placeholder="Subject"/>
+						<input type="text" placeholder="Message"/>
+					</form>
+					<div className="connect-btn ">
+						Connect
+					</div>
 				</div>
 				<div className="address">
 					<img src={require('./map.svg')} />
