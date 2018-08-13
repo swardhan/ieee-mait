@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Header from './Header/Header';
 import Landing from './Landing/Landing';
 import Team from './Team/Team'
+import KnowIEEE from './KnowIEEE/KnowIEEE'
 
 class App extends Component {
 	render() {
@@ -13,6 +14,7 @@ class App extends Component {
 					<Header/>
 					<Route exact path='/' component={Landing}/>
 					<Route exact path='/team' component={Team}/>
+					<Route exact path='/about' component={KnowIEEE}/>
 				</div>
 			</BrowserRouter>
 			)

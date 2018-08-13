@@ -77,7 +77,9 @@ const About = () => {
 	return (
 			<div className="about-grid">
 				<div className="know-ieee-mait">
-					<p className="heading">KNOW IEEE MAIT</p>
+					<p className="heading">
+						<Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>KNOW IEEE MAIT</Link>
+					</p>
 					<p className="byline">Playground of Innovations</p>
 				</div>
 				<div className="know-ieee">

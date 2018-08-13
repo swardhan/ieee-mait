@@ -1,0 +1,162 @@
+.team-container {
+	background-color: black;
+}
+
+.team-container > .grid {
+	display: grid;
+	height: 78vh;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr 3fr 3fr;
+	padding: 5%;
+	padding-top: 7%;
+}
+
+.team-container > .grid > .team-nav {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column: 1/6;
+}
+
+.team-container > .grid > .execom {
+	display: grid;
+	grid-column:1/6;
+	grid-row: 2/4;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr 1fr;
+}
+
+.team-container > .grid > .execom > .member {
+	position: relative;
+	color: white;
+}
+
+.team-container > .grid > .execom > .member > img {
+    margin:auto;
+	display: block;
+	margin-bottom: 2%;
+	border-radius: 5px;
+	position: relative;
+}
+
+/*.team-container > .grid > .execom > .member > .img-overlay {
+	position: absolute;
+	opacity: 0;
+	height: 160px;
+	width: 106px;
+	top: 1.5%;
+	right: 28%;
+	background-color: gray;
+	color: orange;
+}
+
+.team-container > .grid > .execom > .member > img:hover + .img-overlay {
+	opacity: 0.5;
+}
+*/
+.team-container > .grid > .execom > .member > img:hover {
+	border: 2px solid #b103a9;
+}
+
+.team-container > .grid > .execom > .member > p {
+	margin: 0;
+	text-align: center;
+	font-family: "Questrial", arial, sans-serif;
+}
+
+.team-container > .grid > .execom > .member > p.designation {
+	font-weight: bold;
+	margin-top: 2%
+}
+
+.team-container > .grid > .extended-execom {
+	display: grid;
+	grid-column:1/6;
+	grid-row: 2/4;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr 3fr;
+	grid-gap: 6% 4%;
+	position: relative	
+}
+
+.team-container > .grid > .extended-execom > .member {
+	background-color: #212020;
+	border-radius: 12px;
+	border: 2px solid #b103a9;
+	color: white;
+	font-family: "Questrial", arial, sans-serif;
+	position: relative;
+}
+
+.team-container > .grid > .extended-execom > .member > .ext-overlay {
+	opacity: 0;
+    height: 79%;
+    width: 96%;
+    padding: 2%;
+    background: black;
+    border-radius: 12px;
+}
+
+.team-container > .grid > .extended-execom > .member > .ext-overlay > .content {
+	position: absolute;
+	display: inline;
+	text-align: center;
+	margin: auto;
+	width: 96%;
+}
+
+.team-container > .grid > .extended-execom > .member > .ext-overlay > .content > .title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.team-container > .grid > .extended-execom > .member:hover .ext-overlay {
+	opacity: 1;
+}
+
+.team-container > .grid > .extended-execom > .member:hover {
+	background-color: black;
+}
+
+.team-container > .grid > .extended-execom > .member:hover .designation {
+	opacity: 0;
+}
+
+.team-container > .grid > .extended-execom > .member > .designation{
+	position: absolute;
+	bottom: 5%;
+	left: 2%;
+}
+
+.team-container > .grid > .team-nav {
+	color: white;
+}
+
+.team-container > .grid > .team-nav > div {
+	text-align: center;
+}
+
+.team-container > .grid > .team-nav > div > p {
+	cursor: pointer;
+}
+
+.team-container > .grid > .team-nav > .selected > p {
+	background: #11998e;
+	background: -webkit-linear-gradient(to left, #38ef7d, #11998e);
+	background: linear-gradient(to left, #38ef7d, #11998e);
+	display: inline;
+	font-size: 2em;
+	font-family: "Questrial", arial, sans-serif;
+	font-weight: bold;
+	padding: 3%;
+	border-radius: 10px;
+}
+
+.team-container > .grid > .team-nav > .not-selected > p {
+	color: #a1a4a8;
+	font-size: 1.2em;
+	background-color: #4c4c4c;
+	display: inline;
+	padding: 2%;
+	border-radius: 10px;
+	font-family: "Questrial", arial, sans-serif;
+}
