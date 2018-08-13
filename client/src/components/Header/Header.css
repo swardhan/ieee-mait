@@ -1,5 +1,6 @@
 #navbar{
 	width: 95%;
+	min-width: 900px;
 	height: 6%;
 	top: 0px;
 	position: fixed;

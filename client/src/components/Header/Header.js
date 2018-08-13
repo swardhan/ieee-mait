@@ -34,13 +34,13 @@ class Header extends Component {
 		return(
 			<div id="navbar">
 				<ul id="menu">
-					<li className="logo" onClick={() => this.changeHighlight('welcome')}><Link to="/"><img id="logo" src={require('./logo.png')}/></Link></li>
-					<li className={this.highlightFilter('about')} onClick={() => this.changeHighlight('about')}><Link to="/">About</Link></li>
-					<li className={this.highlightFilter('events')} onClick={() => this.changeHighlight('events')}><Link to="/">Events</Link></li>
-					<li className={this.highlightFilter('achievements')} onClick={() => this.changeHighlight('achievements')}><Link to="/">Achievements</Link></li>
-					<li className={this.highlightFilter('projects')} onClick={() => this.changeHighlight('projects')}><Link to="/">Projects</Link></li>
-					<li className={this.highlightFilter('team')} onClick={() => this.changeHighlight('team')}><Link to="/team">Team</Link></li>
-					<li className={this.highlightFilter('contact')} onClick={() => this.changeHighlight('contact')}><Link to="/">Contact</Link></li>
+					<li className="logo"><Link to="/" onClick={() => this.changeHighlight('welcome')}><img id="logo" src={require('./logo.png')}/></Link></li>
+					<li className={this.highlightFilter('about')}><Link to="/" onClick={() => this.changeHighlight('about')}>About</Link></li>
+					<li className={this.highlightFilter('events')}><Link to="/" onClick={() => this.changeHighlight('events')}>Events</Link></li>
+					<li className={this.highlightFilter('achievements')}><Link to="/"  onClick={() => this.changeHighlight('achievements')}>Achievements</Link></li>
+					<li className={this.highlightFilter('projects')}><Link to="/" onClick={() => this.changeHighlight('projects')}>Projects</Link></li>
+					<li className={this.highlightFilter('team')}><Link to="/team" onClick={() => this.changeHighlight('team')}>Team</Link></li>
+					<li className={this.highlightFilter('contact')}><Link to="/" onClick={() => this.changeHighlight('contact')}>Contact</Link></li>
 				</ul>
 			</div>
 			)

@@ -1,0 +1,139 @@
+.achievements-container {
+	background-color: black;
+	color: white;
+	font-family: "Questrial", arial, sans-serif;
+}
+
+.achievements-container > .grid {
+	display: grid;
+	height: 78vh;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 3fr 3fr;
+	padding: 5%;
+	padding-top: 7%;
+}
+
+.achievements-container > .grid > .header {
+	grid-column: 1/4;
+	display:grid;
+	vertical-align: middle;
+}
+
+.achievements-container > .grid > .ieeeNav {
+	grid-template-columns: 2.5fr 1fr;
+	text-align: right;
+}
+
+.achievements-container > .grid > .otherNav {
+	grid-template-columns: 1fr 2fr;
+	text-align: left;
+}
+
+.achievements-container > .grid > .header > .selected > span {
+	background: #bc4e9c;
+	background: -webkit-linear-gradient(to left, #f80759, #bc4e9c);
+	background: linear-gradient(to left, #f80759, #bc4e9c);
+	font-size: 2em;
+	font-family: "Questrial", arial, sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 2%;
+	top:50%;
+	display: inline-block;
+	line-height: 90%;
+	cursor: pointer;
+}
+
+.achievements-container > .grid > .header > .not-selected > span {
+	color: #a1a4a8;
+	font-size: 1.2em;
+	background-color: #4c4c4c;
+	border-radius: 10px;
+	font-family: "Questrial", arial, sans-serif;
+	display: inline-block;
+	padding: 2%;
+	line-height: 100%;
+	cursor: pointer;
+}
+
+.achievements-container > .grid > .otherAchievements {
+	display: grid;
+	grid-column: 1/4;
+	grid-row: 2/4;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.achievements-container > .grid > .otherAchievements > .achievements {
+	position: relative;
+}
+
+.achievements-container > .grid > .otherAchievements > .achievements > img {
+	display: block;
+	margin: auto;
+	border-radius: 15px;
+}
+
+.achievements-container > .grid > .otherAchievements > .achievements > p {
+	text-align: center;
+}
+
+.achievements-container > .grid > .otherAchievements > .achievements > .award-overlay {
+	position: absolute;
+	top: 2%;
+    left: 16.5%;
+    width: 66%;
+    height: 76%;
+    display: none;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+}
+
+.achievements-container > .grid > .otherAchievements > .achievements > .award-overlay > .desc{
+	text-align: center;
+}
+
+.achievements-container > .grid > .otherAchievements > .achievements:hover .award-overlay {
+	display: block;
+}
+
+.achievements-container > .grid > .ieeeAchievements {
+	display: grid;
+	grid-column: 1/4;
+	grid-row: 2/4;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.achievements-container > .grid > .ieeeAchievements > .achievements {
+	position: relative;
+}
+
+.achievements-container > .grid > .ieeeAchievements > .achievements > img {
+	display: block;
+	margin: auto;
+	border-radius: 15px;
+}
+
+.achievements-container > .grid > .ieeeAchievements > .achievements > p {
+	text-align: center;
+}
+
+.achievements-container > .grid > .ieeeAchievements > .achievements > .award-overlay {
+	position: absolute;
+	top: 2%;
+    left: 16.5%;
+    width: 66%;
+    height: 76%;
+    display: none;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+}
+
+.achievements-container > .grid > .ieeeAchievements > .achievements > .award-overlay > .desc{
+	text-align: center;
+}
+
+.achievements-container > .grid > .ieeeAchievements > .achievements:hover .award-overlay {
+	display: block;
+}

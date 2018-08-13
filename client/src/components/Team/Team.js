@@ -21,17 +21,11 @@ class Team extends Component{
 				<div className="execom">
 					<div className="member">
 						<img src={require('./member.png')} />
-						<div className="img-overlay">
-							<div className="text"></div>
-						</div>
 						<p className="name">Dr. Monika Gupta</p>
 						<p className="designation">Branch Counsellor</p>
 					</div>
 					<div className="member">
 						<img src={require('./member.png')} />
-						<div className="img-overlay">
-							<div className="text"></div>
-						</div>
 						<p className="name">Samraj Agarwal</p>
 						<p className="designation">Chairperson</p>
 					</div>

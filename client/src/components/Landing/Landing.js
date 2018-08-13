@@ -78,12 +78,12 @@ const About = () => {
 			<div className="about-grid">
 				<div className="know-ieee-mait">
 					<p className="heading">
-						<Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>KNOW IEEE MAIT</Link>
+						KNOW IEEE MAIT
 					</p>
 					<p className="byline">Playground of Innovations</p>
 				</div>
 				<div className="know-ieee">
-					<p className="heading">KNOW ABOUT IEEE</p>
+					<p className="heading"><Link to="/about-ieee" style={{ textDecoration: 'none', color: 'white' }}>KNOW ABOUT IEEE</Link></p>
 					<p className="byline">Advancing Technology for Humanity</p>
 				</div>
 			</div>
@@ -97,8 +97,8 @@ const Achievements = () => {
 				<div className="heading">ACHIEVEMENTS</div>
 				<div className="byline">IEEE MAIT has always provided the platform to its member to engage and create something worthy</div>
 			</div>
-			<div className="under-ieee">ACHIEVEMENTS UNDER IEEE</div>
-			<div className="other">VARIOUS OTHER ACHIEVEMENTS</div>
+			<div className="under-ieee"><Link to="/achievements/ieee" style={{ textDecoration: 'none', color: 'white' }}>ACHIEVEMENTS UNDER IEEE</Link></div>
+			<div className="other"><Link to="/achievements/other" style={{ textDecoration: 'none', color: 'white' }}>VARIOUS OTHER ACHIEVEMENTS</Link></div>
 		</div>
 		)
 }
@@ -111,7 +111,7 @@ const Projects = () => {
 				<div className="byline">Amazing blend of knowledge and talent</div>
 			</div>
 			<div className="projects-link">
-				VARIOUS PROJECTS BY OUR MEMBERS
+				<Link to="/projects" style={{ textDecoration: 'none', color: 'white' }}>VARIOUS PROJECTS BY OUR MEMBERS</Link>
 			</div>
 		</div>
 		)
@@ -125,7 +125,7 @@ const Events = () => {
 				<div className="byline">Each year IEEE MAIT conducts and <br/> participates in a plethora of events...</div>
 			</div>
 			<div className="events-link">
-				VIEW OUR EVENTS
+				<Link to="/events" style={{ textDecoration: 'none', color: 'white' }}>VIEW OUR EVENTS</Link>
 			</div>
 		</div>
 		)
