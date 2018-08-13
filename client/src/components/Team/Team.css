@@ -38,21 +38,6 @@
 	position: relative;
 }
 
-/*.team-container > .grid > .execom > .member > .img-overlay {
-	position: absolute;
-	opacity: 0;
-	height: 160px;
-	width: 106px;
-	top: 1.5%;
-	right: 28%;
-	background-color: gray;
-	color: orange;
-}
-
-.team-container > .grid > .execom > .member > img:hover + .img-overlay {
-	opacity: 0.5;
-}
-*/
 .team-container > .grid > .execom > .member > img:hover {
 	border: 2px solid #b103a9;
 }
