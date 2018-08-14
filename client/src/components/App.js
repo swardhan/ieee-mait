@@ -8,6 +8,7 @@ import KnowIEEE from './KnowIEEE/KnowIEEE';
 import Project from './Project/Project';
 import Events from './Events/Events';
 import Achievements from './Achievements/Achievements';
+import KnowMAIT from './KnowIEEEMait/KnowMAIT';
 
 class App extends Component {
 	render() {
@@ -23,6 +24,7 @@ class App extends Component {
 					<Route exact path= '/achievements' render={() => <Achievements current="ieee" />} />
 					<Route exact path= '/achievements/ieee' render={() => <Achievements current="ieee" />} />
 					<Route exact path= '/achievements/other' render={() => <Achievements current="other" />} />
+					<Route exact path='/about-ieee-mait' component={KnowMAIT} />					
 				</div>
 			</BrowserRouter>
 			)

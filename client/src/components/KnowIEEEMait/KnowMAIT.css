@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+}
+
+.mait-container {
+	background-color: black;
+}
+
+.mait-container > .grid {
+	padding: 0;
+	display: grid;
+	color: white;
+	font-family: "Questrial", arial, sans-serif;
+	grid-template-rows: 2fr 2fr 2fr;
+}
+
+.mait-container > .grid > .image-container > img {
+	width: 100%;
+	height: 100vh;
+}
+
+.mait-container > .grid > .image-container {
+	position: relative;
+	height: 100vh;
+}
+
+.mait-container > .grid > .image-container > .head-text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mait-container > .grid > .image-container > .head-text > .main {
+	text-align: center;	
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.mait-container > .grid > .image-container > .head-text > .byline {
+	text-align: center;
+	margin: 0;
+	font-size: 3em;		
+}
+
+.mait-container > .grid > .footer > img {
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+
+.mait-container > .grid > .about-us {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.mait-container > .grid > .about-us >div > .heading{
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 0
+}
+
+.mait-container > .grid > .about-us >div > .desc {
+	padding: 5%;
+	font-size: 1.5em
+}
+
+.mait-container > .grid > .about-us > .affinity {
+	grid-column: 1/3;
+}
+
+.mait-container > .grid > .about-us > .affinity > .affinity-desc {
+	display: grid;
+	grid-template-columns: 3.5fr 1fr;
+	grid-template-rows: 3.fr 1fr;
+	background-color: #2e004f;
+	margin: 0 4%;
+	border-radius: 15px;
+}
+
+.mait-container > .grid > .about-us > .affinity > .affinity-desc > .know-more {
+	grid-column: 1/3;
+	text-align: right;
+	padding-right: 5%;
+	padding-bottom: 1%;
+}
+
+.mait-container > .grid > .about-us > .affinity > .affinity-desc > .wie {
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+.mait-container > .grid > .about-us > .affinity > .affinity-desc > .wie > .wie-heading {
+	font-size: 2em;
+	padding-left: 2%;
+	font-weight: bold;
+}
+
+.mait-container > .grid > .about-us > .affinity > .affinity-desc > .wie > .wie-desc {
+	font-size: 1.2em;
+	padding-top: 2%;
+	padding-left: 3%
+}
+
+.mait-container > .grid > .about-us > .affinity > .affinity-desc > .wie-img > img {
+	width: 90%;
+	bottom: 0;
+	right: 0;
+}
+
+.mait-container > .grid > .members {
+	display: grid;
+	padding: 0 15%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 4fr 4fr;
+	height: 80vh;
+	grid-row-gap: 5%;
+}
+
+.mait-container > .grid > .members > .heading {
+	grid-column: 1/4;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.mait-container > .grid > .members > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.mait-container > .grid > .members > div > img {
+	width: 25%;
+	display: block;
+	margin: auto;
+}
+
+.mait-container > .grid > .members > div > .number {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.mait-container > .grid > .members > div > .head{
+	text-align: center;
+	font-size: 2em;
+}
+
+.mait-container > .grid > .members > .wie, .total, .pes {
+	border-bottom: 2px solid white;
+	padding-bottom: 10%
+}
